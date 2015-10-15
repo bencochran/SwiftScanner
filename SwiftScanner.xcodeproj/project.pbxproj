@@ -10,6 +10,10 @@
 		B88F8FCE1BD01000002D0E7E /* SwiftScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = B88F8FCD1BD01000002D0E7E /* SwiftScanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B88F8FD51BD01000002D0E7E /* SwiftScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B88F8FCA1BD01000002D0E7E /* SwiftScanner.framework */; settings = {ASSET_TAGS = (); }; };
 		B88F8FDA1BD01000002D0E7E /* SwiftScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F8FD91BD01000002D0E7E /* SwiftScannerTests.swift */; };
+		B88F8FE51BD01010002D0E7E /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F8FE41BD01010002D0E7E /* Scanner.swift */; settings = {ASSET_TAGS = (); }; };
+		B88F8FE71BD01271002D0E7E /* StringScanning.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F8FE61BD01271002D0E7E /* StringScanning.swift */; settings = {ASSET_TAGS = (); }; };
+		B88F8FE91BD012A6002D0E7E /* CharacterSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F8FE81BD012A6002D0E7E /* CharacterSet.swift */; settings = {ASSET_TAGS = (); }; };
+		B88F8FED1BD020AD002D0E7E /* CharacterSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F8FEC1BD020AD002D0E7E /* CharacterSetTests.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		B88F8FD41BD01000002D0E7E /* SwiftScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftScannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88F8FD91BD01000002D0E7E /* SwiftScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftScannerTests.swift; sourceTree = "<group>"; };
 		B88F8FDB1BD01000002D0E7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B88F8FE41BD01010002D0E7E /* Scanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
+		B88F8FE61BD01271002D0E7E /* StringScanning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringScanning.swift; sourceTree = "<group>"; };
+		B88F8FE81BD012A6002D0E7E /* CharacterSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterSet.swift; sourceTree = "<group>"; };
+		B88F8FEC1BD020AD002D0E7E /* CharacterSetTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterSetTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,9 @@
 			isa = PBXGroup;
 			children = (
 				B88F8FCD1BD01000002D0E7E /* SwiftScanner.h */,
+				B88F8FE41BD01010002D0E7E /* Scanner.swift */,
+				B88F8FE61BD01271002D0E7E /* StringScanning.swift */,
+				B88F8FE81BD012A6002D0E7E /* CharacterSet.swift */,
 				B88F8FCF1BD01000002D0E7E /* Info.plist */,
 			);
 			path = SwiftScanner;
@@ -81,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				B88F8FD91BD01000002D0E7E /* SwiftScannerTests.swift */,
+				B88F8FEC1BD020AD002D0E7E /* CharacterSetTests.swift */,
 				B88F8FDB1BD01000002D0E7E /* Info.plist */,
 			);
 			path = SwiftScannerTests;
@@ -142,6 +154,7 @@
 		B88F8FC11BD01000002D0E7E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Ben Cochran";
 				TargetAttributes = {
@@ -193,6 +206,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B88F8FE51BD01010002D0E7E /* Scanner.swift in Sources */,
+				B88F8FE71BD01271002D0E7E /* StringScanning.swift in Sources */,
+				B88F8FE91BD012A6002D0E7E /* CharacterSet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B88F8FED1BD020AD002D0E7E /* CharacterSetTests.swift in Sources */,
 				B88F8FDA1BD01000002D0E7E /* SwiftScannerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +319,7 @@
 		B88F8FDF1BD01000002D0E7E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -314,12 +332,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bencochran.SwiftScanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		B88F8FE01BD01000002D0E7E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
