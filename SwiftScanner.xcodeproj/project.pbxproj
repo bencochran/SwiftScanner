@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B83031CE1BEDEAD400ECBF99 /* StringScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83031CD1BEDEAD400ECBF99 /* StringScannerTests.swift */; };
 		B88F8FCE1BD01000002D0E7E /* SwiftScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = B88F8FCD1BD01000002D0E7E /* SwiftScanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B88F8FD51BD01000002D0E7E /* SwiftScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B88F8FCA1BD01000002D0E7E /* SwiftScanner.framework */; settings = {ASSET_TAGS = (); }; };
-		B88F8FDA1BD01000002D0E7E /* SwiftScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F8FD91BD01000002D0E7E /* SwiftScannerTests.swift */; };
+		B88F8FDA1BD01000002D0E7E /* ScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F8FD91BD01000002D0E7E /* ScannerTests.swift */; };
 		B88F8FE51BD01010002D0E7E /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F8FE41BD01010002D0E7E /* Scanner.swift */; settings = {ASSET_TAGS = (); }; };
 		B88F8FE71BD01271002D0E7E /* StringScanning.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F8FE61BD01271002D0E7E /* StringScanning.swift */; settings = {ASSET_TAGS = (); }; };
 		B88F8FE91BD012A6002D0E7E /* CharacterSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F8FE81BD012A6002D0E7E /* CharacterSet.swift */; settings = {ASSET_TAGS = (); }; };
@@ -27,11 +28,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B83031CD1BEDEAD400ECBF99 /* StringScannerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringScannerTests.swift; sourceTree = "<group>"; };
 		B88F8FCA1BD01000002D0E7E /* SwiftScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88F8FCD1BD01000002D0E7E /* SwiftScanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftScanner.h; sourceTree = "<group>"; };
 		B88F8FCF1BD01000002D0E7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B88F8FD41BD01000002D0E7E /* SwiftScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftScannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B88F8FD91BD01000002D0E7E /* SwiftScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftScannerTests.swift; sourceTree = "<group>"; };
+		B88F8FD91BD01000002D0E7E /* ScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerTests.swift; sourceTree = "<group>"; };
 		B88F8FDB1BD01000002D0E7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B88F8FE41BD01010002D0E7E /* Scanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
 		B88F8FE61BD01271002D0E7E /* StringScanning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringScanning.swift; sourceTree = "<group>"; };
@@ -91,7 +93,8 @@
 		B88F8FD81BD01000002D0E7E /* SwiftScannerTests */ = {
 			isa = PBXGroup;
 			children = (
-				B88F8FD91BD01000002D0E7E /* SwiftScannerTests.swift */,
+				B88F8FD91BD01000002D0E7E /* ScannerTests.swift */,
+				B83031CD1BEDEAD400ECBF99 /* StringScannerTests.swift */,
 				B88F8FEC1BD020AD002D0E7E /* CharacterSetTests.swift */,
 				B88F8FDB1BD01000002D0E7E /* Info.plist */,
 			);
@@ -217,7 +220,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B88F8FED1BD020AD002D0E7E /* CharacterSetTests.swift in Sources */,
-				B88F8FDA1BD01000002D0E7E /* SwiftScannerTests.swift in Sources */,
+				B83031CE1BEDEAD400ECBF99 /* StringScannerTests.swift in Sources */,
+				B88F8FDA1BD01000002D0E7E /* ScannerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
