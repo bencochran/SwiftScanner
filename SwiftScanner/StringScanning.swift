@@ -15,14 +15,25 @@ extension String {
 }
 
 extension Scanner where Collection.Generator.Element == Character, Collection.SubSequence.Generator.Element == Character {
+    public var remainingString: String? {
+        return remaining.map(String.init)
+    }
+    
     public mutating func scanString(string: String) -> Bool {
         return scanMatchingSequence(string.characters)
+    }
+    
+    public mutating func scanCharacterFromSet(set: CharacterSet) -> Character? {
+        return scanElement(set.contains)
     }
     
     public mutating func scanCharactersFromSet(set: CharacterSet) -> String? {
         return scanSequence(set.contains).map(String.init)
     }
-    
+}
+
+
+extension Scanner where Collection.Generator.Element == Character, Collection.SubSequence.Generator.Element == Character {
     public mutating func scanDouble() -> Double? {
         return attempt {
             guard let string = scanCharactersFromSet(.decimalDigits) else {
