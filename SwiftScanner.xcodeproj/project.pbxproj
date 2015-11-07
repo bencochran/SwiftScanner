@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		B83031CE1BEDEAD400ECBF99 /* StringScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83031CD1BEDEAD400ECBF99 /* StringScannerTests.swift */; };
 		B88F8FCE1BD01000002D0E7E /* SwiftScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = B88F8FCD1BD01000002D0E7E /* SwiftScanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B88F8FD51BD01000002D0E7E /* SwiftScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B88F8FCA1BD01000002D0E7E /* SwiftScanner.framework */; settings = {ASSET_TAGS = (); }; };
+		B88F8FD51BD01000002D0E7E /* SwiftScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B88F8FCA1BD01000002D0E7E /* SwiftScanner.framework */; };
 		B88F8FDA1BD01000002D0E7E /* ScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F8FD91BD01000002D0E7E /* ScannerTests.swift */; };
-		B88F8FE51BD01010002D0E7E /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F8FE41BD01010002D0E7E /* Scanner.swift */; settings = {ASSET_TAGS = (); }; };
-		B88F8FE71BD01271002D0E7E /* StringScanning.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F8FE61BD01271002D0E7E /* StringScanning.swift */; settings = {ASSET_TAGS = (); }; };
-		B88F8FE91BD012A6002D0E7E /* CharacterSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F8FE81BD012A6002D0E7E /* CharacterSet.swift */; settings = {ASSET_TAGS = (); }; };
-		B88F8FED1BD020AD002D0E7E /* CharacterSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F8FEC1BD020AD002D0E7E /* CharacterSetTests.swift */; settings = {ASSET_TAGS = (); }; };
+		B88F8FE51BD01010002D0E7E /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F8FE41BD01010002D0E7E /* Scanner.swift */; };
+		B88F8FE71BD01271002D0E7E /* StringScanning.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F8FE61BD01271002D0E7E /* StringScanning.swift */; };
+		B88F8FE91BD012A6002D0E7E /* CharacterSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F8FE81BD012A6002D0E7E /* CharacterSet.swift */; };
+		B88F8FED1BD020AD002D0E7E /* CharacterSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F8FEC1BD020AD002D0E7E /* CharacterSetTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -400,6 +400,7 @@
 				B88F8FE01BD01000002D0E7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B88F8FE11BD01000002D0E7E /* Build configuration list for PBXNativeTarget "SwiftScannerTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +409,7 @@
 				B88F8FE31BD01000002D0E7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
